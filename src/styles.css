@@ -314,6 +314,8 @@
   }
 
   .sim-ui-stage {
+    grid-template-rows: auto auto;
+    align-content: start;
     place-items: start center;
   }
 
