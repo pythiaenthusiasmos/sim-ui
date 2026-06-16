@@ -18,18 +18,18 @@
 }
 
 .sim-ui-topbar {
-  min-height: 76px;
+  min-height: 58px;
   display: flex;
   align-items: end;
   justify-content: space-between;
   gap: 18px;
-  padding: 18px 20px 14px;
+  padding: 10px 16px;
   border-bottom: 1px solid var(--sim-ui-line);
 }
 
 .sim-ui-brand h1 {
   margin: 0;
-  font-size: clamp(28px, 4.8vh, 42px);
+  font-size: clamp(24px, 3.8vh, 34px);
   line-height: 1;
   letter-spacing: 0;
 }
@@ -283,7 +283,8 @@
     align-items: start;
     flex-direction: column;
     min-height: 0;
-    padding: 13px;
+    gap: 8px;
+    padding: 10px 13px;
   }
 
   .sim-ui-actions {

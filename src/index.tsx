@@ -17,7 +17,7 @@ export type NumericControlConfig<T extends object> = {
 
 type AppFrameProps = {
   title: string
-  subtitle: string
+  subtitle?: string
   actions?: ReactNode
   controls: ReactNode
   viewport: ReactNode
@@ -75,7 +75,7 @@ export function AppFrame({
       <header className="sim-ui-topbar">
         <div className="sim-ui-brand">
           <h1>{title}</h1>
-          <p>{subtitle}</p>
+          {subtitle && <p>{subtitle}</p>}
         </div>
         {actions && <div className="sim-ui-actions">{actions}</div>}
       </header>
