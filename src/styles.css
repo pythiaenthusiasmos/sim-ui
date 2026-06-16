@@ -310,7 +310,7 @@
   .sim-ui-workbench {
     padding: 8px;
     gap: 8px;
-    grid-template-rows: minmax(0, 1fr) minmax(150px, 18svh);
+    grid-template-rows: auto minmax(0, 1fr);
   }
 
   .sim-ui-stage {
