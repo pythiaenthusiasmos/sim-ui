@@ -80,7 +80,7 @@ export function AppFrame({
         {actions && <div className="sim-ui-actions">{actions}</div>}
       </header>
       <section className="sim-ui-workbench" aria-label={viewportLabel}>
-        <section className="sim-ui-stage" ref={stageRef}>
+        <section className={['sim-ui-stage', stats ? 'has-stats' : undefined].filter(Boolean).join(' ')} ref={stageRef}>
           <div
             className="sim-ui-viewport-frame"
             style={viewportSize ? { width: viewportSize, height: viewportSize } : undefined}
