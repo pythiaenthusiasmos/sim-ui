@@ -313,6 +313,10 @@
     grid-template-rows: minmax(0, 1fr) minmax(150px, 18svh);
   }
 
+  .sim-ui-stage {
+    place-items: start center;
+  }
+
   .sim-ui-control-tiles {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
